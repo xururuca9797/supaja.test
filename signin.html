@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/signin.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="inner">
+        <h1 class="header_logo">
+          <a class="header_logo_link" href="#none" title="수파자바로가기">
+            <img
+              class="header_logo_img"
+              src="./image/header_logo.png"
+              alt="수파자로고"
+            />logo
+          </a>
+        </h1>
+        <ul class="header_list">
+          <li class="focus">
+            <a href="#none" title="그룹 강의 Live"
+              >그룹 강의 <span class="Live">Live</span><span class="Oval"></span
+            ></a>
+          </li>
+          <li><a href="#none" title="공부노하우">공부노하우</a></li>
+          <li><a href="#none" title="이용방법">이용방법</a></li>
+          <li><a href="/signup.html" title="회원가입">회원가입</a></li>
+          <li><a href="/signin.html" title="로그인">로그인</a></li>
+          <li><a href="#none" title="무료체험">무료체험 신청</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main-section">
+        <h2 class="main_title">학생 로그인</h2>
+        <form id="main-loginForm">
+          <fieldset class="loginForm_fld_login">
+            <legend class="screen_out">학생 로그인폼</legend>
+            <label for="login_tel">휴대폰 번호</label>
+            <input
+              type="tel"
+              name="tel"
+              id="login_tel"
+              placeholder="01000001234"
+              tabindex="1"
+            />
+            <label for="login_password">비밀번호</label>
+            <input
+              type="password"
+              name="passwordd"
+              id="login_password"
+              placeholder="hj.lim@s"
+              tabindex="2"
+            />
+            <button
+              class="btn_submit"
+              type="button"
+              tabindex="3"
+              onclick="onSignin()"
+            >
+              로그인
+            </button>
+          </fieldset>
+        </form>
+        <div class="info_user">
+          <p class="info_signup">
+            수파자 계정이 없으신가요?
+            <a class="info_signup_link" href="./signup.html" title="회원가입"
+              >회원가입</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="inner clearfix">
+        <div class="footer_left">
+          <p>
+            고객센터 02-2135-9632
+            <small>(평일 10~18시, 주말 10시~18시, 공휴일 미운영)</small>
+          </p>
+
+          <p>이메일 문의 help@supaja.com</p>
+        </div>
+        <div class="footer_rigth">
+          <small>카카오톡 채널@수파자 | help@supaja.com</small>
+          <small>
+            (주) 수파자 | 대표이사 이명호 | 사업자등록번호 : 361-86-01077 |
+            통신판매번호 : 2018-서울강남-00930
+          </small>
+          <address>서울특별시 강남구 테헤란로 129, 강남N타워 7층</address>
+        </div>
+        <div class="footer_copyright">
+          <span>&copy; All Rights Reserved by Supaja</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/signin.js"></script>
+  </body>
+</html>

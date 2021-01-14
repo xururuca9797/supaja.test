@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* Font Noto Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+input::placeholder {
+  color: #dadada;
+}
+label {
+  display: block;
+  font-weight: 500;
+  line-height: 20px;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.inner {
+  width: 1140px;
+  margin: 0 auto;
+}
+.screen_out {
+  display: none;
+}
+
+/* Header Nav*/
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: #1b1d21;
+  padding: 32px 0px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header .header_logo {
+  width: 134px;
+  height: 28px;
+  display: inline-block;
+}
+.header_logo .header_logo_link {
+  display: block;
+}
+.header_logo .header_logo_img {
+  width: 100%;
+}
+.header .header_list {
+  display: flex;
+  float: right;
+}
+.header_list li {
+  width: 139px;
+  color: #76777a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+}
+.header_list li.focus {
+  position: relative;
+  color: #f7f7f7;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-5px);
+}
+.header_list li.focus::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  right: 12px;
+  width: 114px;
+  height: 1px;
+  background-color: #fff;
+}
+.header_list li .Live {
+  position: relative;
+  font-size: 20px;
+  color: #6f63e9;
+}
+.header_list li .Live::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #ff5b56;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding-top: 32px;
+  background-color: #2c3036;
+}
+.footer small,
+.footer_rigth address {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.footer .inner {
+  height: 176px;
+  box-sizing: border-box;
+  color: #f3f3f3;
+}
+.footer .inner div {
+  margin-bottom: 41px;
+}
+.footer .footer_left,
+.footer .footer_copyright {
+  float: left;
+}
+.footer .footer_left {
+  width: 445px;
+  margin-right: 122px;
+  padding-left: 8px;
+}
+.footer .inner p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.footer .footer_rigth {
+  float: right;
+  height: 64px;
+  padding-right: 8px;
+}
+.footer .footer_rigth small {
+  display: block;
+}
+.footer .footer_copyright {
+  width: 100%;
+  border-top: 1px solid rgba(118, 119, 122, 0.5);
+}
+.footer .footer_copyright span {
+  font-size: 10px;
+  padding: 0 8px;
+  line-height: 2.6;
+}

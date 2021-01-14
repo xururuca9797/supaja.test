@@ -1,0 +1,170 @@
+@charset "utf-8";
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main {
+  margin-bottom: 323px;
+}
+.main .main-section {
+  width: 400px;
+  margin: 0 auto;
+}
+.main-section .main_title {
+  font-size: 30px;
+  margin: 80px 0px 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.signupForm_fld_signup input,
+.btn_submit {
+  width: 400px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+}
+.signupForm_fld_signup input {
+  padding: 9px 12px;
+}
+.signupForm_fld_signup input:focus {
+  border: solid 1px #6f63e9;
+}
+.btn_submit {
+  background-color: #6f63e9;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn_submit:disabled {
+  background-color: #dadada;
+  color: #76777a;
+}
+.main .info_user {
+  text-align: center;
+}
+.info_user .info_signup {
+  font-weight: normal;
+  color: #76777a;
+}
+.info_user .info_signup_link {
+  font-weight: 500;
+  color: #6f63e9;
+}
+.item_inp {
+  margin-bottom: 16px;
+  position: relative;
+}
+.item_inp_box,
+.item_tf_box {
+  position: relative;
+  margin: 3px 0px 16px;
+}
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: #cdcdcd;
+  cursor: pointer;
+}
+.item_tf {
+  padding: 12px 10px;
+  border-radius: 3px;
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+}
+.item_tf:nth-of-type(3) {
+  margin-top: 16px;
+}
+.item_tf input {
+  display: none;
+}
+.item_tf label {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  border: solid 1px #dadada;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.item_tf input:checked + label {
+  background-color: #6f63e9;
+  border: solid 1px #6f63e9;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  font-size: 0;
+}
+.item_tf input:checked + label .icon::after {
+  display: block;
+  width: 10px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  box-sizing: border-box;
+  content: "";
+  transform: rotate(138deg);
+}
+.item_tf .item_tf_text {
+  display: inline-block;
+  font-size: 12px;
+  color: #18191b;
+  position: relative;
+  transform: translateY(-2px);
+}
+.btn_submit {
+  margin-top: 26px;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(218, 218, 218, 0.5);
+  margin: 8px 0 24px 0;
+}
+
+.signup_chaeck_info {
+  width: 16px;
+  height: 18px;
+  border: solid 1px #dadada;
+  background-color: #fff;
+}
+.info_error {
+  display: none;
+  color: #ff5b56;
+  font-size: 12px;
+  line-height: 30px;
+}
+.num_error {
+  border: 1px solid red;
+}
+.signup_chaeck_plus {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  right: 10px;
+  top: 14px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+.signup_chaeck_plus span {
+  position: absolute;
+  top: -3px;
+  right: 3px;
+  color: #dadada;
+  font-weight: bold;
+}

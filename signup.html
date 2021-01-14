@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="inner">
+        <h1 class="header_logo">
+          <a class="header_logo_link" href="#none" title="수파자바로가기">
+            <img
+              class="header_logo_img"
+              src="./image/header_logo.png"
+              alt="수파자로고"
+            />logo
+          </a>
+        </h1>
+        <ul class="header_list">
+          <li class="focus">
+            <a href="#none" title="그룹 강의 Live"
+              >그룹 강의 <span class="Live">Live</span><span class="Oval"></span
+            ></a>
+          </li>
+          <li><a href="#none" title="공부노하우">공부노하우</a></li>
+          <li><a href="#none" title="이용방법">이용방법</a></li>
+          <li><a href="/signup.html" title="회원가입">회원가입</a></li>
+          <li><a href="/signin.html" title="로그인">로그인</a></li>
+          <li><a href="#none" title="무료체험">무료체험 신청</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main-section">
+        <h2 class="main_title">만 14세 미만 회원가입</h2>
+        <form id="main-signupForm">
+          <fieldset class="signupForm_fld_signup">
+            <legend class="screen_out">만 14세 미만 회원가입 폼</legend>
+            <div class="item_inp">
+              <label for="signup_name">이름</label>
+              <input
+                type="text"
+                name="text"
+                id="signup_name"
+                placeholder="이름을 입력해주세요."
+                tabindex="1"
+              />
+              <p class="info_error name_arror">이름을 입력해주세요.</p>
+            </div>
+            <div class="item_inp">
+              <label for="signup_tel">본인 핸드폰 번호</label>
+              <div class="item_inp_box">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="signup_tel"
+                  class="num_error"
+                  placeholder="핸드폰 번호를 입력해주세요."
+                  tabindex="2"
+                  maxlength="11"
+                />
+                <button class="btn" type="button" onclick="telCertification()">
+                  전송
+                </button>
+                <p class="info_error tel_arror">핸드폰 번호를 입력해주세요.</p>
+              </div>
+            </div>
+            <div class="item_inp">
+              <label for="signup_code">인증코드</label>
+              <input
+                type="number"
+                name="number"
+                id="signup_code"
+                placeholder="인증코드를 입력해주세요."
+                tabindex="3"
+              />
+              <p class="info_error">인증코드를 입력해주세요.</p>
+            </div>
+
+            <div class="item_inp">
+              <label for="signup_tel_parents"
+                >법정대리인(부모님) 핸드폰 번호</label
+              >
+              <div class="item_inp">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="signup_tel_parents"
+                  placeholder="법정대리인의 핸드폰 번호를 입력해주세요."
+                  tabindex="4"
+                  maxlength="11"
+                />
+                <button
+                  class="btn"
+                  type="button"
+                  onclick="parentsCertification()"
+                >
+                  본인인증
+                </button>
+                <p class="info_error">
+                  법정대리인의 핸드폰 번호를 입력해주세요.
+                </p>
+              </div>
+            </div>
+            <div class="item_inp">
+              <label for="signup_password">비밀번호</label>
+              <input
+                type="password"
+                name="passwordd"
+                id="signup_password"
+                placeholder="비밀번호를 입력해주세요."
+                tabindex="5"
+              />
+              <p class="info_error">비밀번호를 입력해주세요.</p>
+            </div>
+            <div class="item_inp">
+              <label for="signup_password_identify ">비밀번호 확인</label>
+              <input
+                type="password"
+                name="passwordd"
+                id="signup_password_identify"
+                placeholder="비밀번호를 입력해주세요."
+                tabindex="6"
+              />
+              <p class="info_error">비밀번호를 입력해주세요.</p>
+            </div>
+          </fieldset>
+          <fieldset class="signupForm_fld_chaeck">
+            <legend class="screen_out">개인정보 동의 폼</legend>
+            <div class="line"></div>
+            <div class="item_tf">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="signup_chaeck_first"
+                tabindex="7"
+                onclick="updateCheckd()"
+              /><label for="signup_chaeck_first"
+                ><span class="icon">check</span></label
+              >
+              <span class="item_tf_text"
+                >법정대리인(부모님)의 동의를 받았음을 인정합니다.</span
+              >
+            </div>
+            <div class="item_tf item_tf_box">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="signup_chaeck_last"
+                tabindex="8"
+                onclick="updateCheckd()"
+              /><label for="signup_chaeck_last"
+                ><span class="icon">check</span></label
+              >
+              <span class="item_tf_text">개인정보 처리방침에 동의합니다.</span>
+              <button class="signup_chaeck_plus" type="button">
+                <span>+</span>
+              </button>
+            </div>
+
+            <button
+              class="btn_submit"
+              type="button"
+              tabindex="9"
+              onclick="signupSubmit()"
+              disabled
+            >
+              회원가입
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
