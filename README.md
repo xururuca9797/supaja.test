@@ -10,8 +10,8 @@
 - API
 
 ## Links
-- Signin : [__View__](https://xururuca9797.github.io/login_api/signin.html) 
-- Signup : [__View__](https://xururuca9797.github.io/login_api/signup.html) 
+- Signin : [__View__](https://yunyurib.github.io/login_api/signin.html) 
+- Signup : [__View__](https://yunyurib.github.io/login_api/signup.html) 
 - 
 ## 테스트 로그인
 - id : dev@supaja.com
